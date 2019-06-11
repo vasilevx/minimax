@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Лаба 3</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #tree_map {
+            height: 500px;
+            background: rgb(155, 146, 24);
+        }
+
+        body {
+            margin: 0;
+            background: rgb(155, 146, 24);
+        }
+
+        .btns {
+            z-index: 5;
+        }
+
+        img {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        span {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+        }
+
+        span:first-child {
+            background: orange;
+        }
+
+        span:last-child {
+            background: #06b5cc;
+        }
+
+    </style>
+</head>
+<body>
+<img src="mytree.jpg" alt="" srcset="">
+
+    <h1>Вариант 3<br>    
+        <button type="button" onclick="button_minimax()">Минимакс</button>
+        <button type="button" onclick="button_prunings()">Отсечения</button>
+        <p><span></span> - альфа отсечение, <span></span> - бета отсечение</p>
+    </h1>
+
+
+<div id="tree_map"></div>
+
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
